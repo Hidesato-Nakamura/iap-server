@@ -38,7 +38,7 @@ app.post("/", function (req, res) {
 
   console.log(json.TransactionID);
 
-  //データベースにデータ送信！(実際は検証成功後のレシートの情報)
+  //データベースにデータ送信！!(実際は検証成功後のレシートの情報)
   database.ref("users").push({
     TransactionID: json.TransactionID,
     Payload: payload.this,
